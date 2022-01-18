@@ -10,13 +10,13 @@ function Viewer() {
   const { urn, setUrn, setLoading } = useContext(Mycontext);
 
   function getForgeToken(callback) {
-    fetch("https://deign-automayion.herokuapp.com/api/forge/oauth/token").then(
+    fetch("https://design-automation.herokuapp.com/api/forge/oauth/token").then(
       (res) => {
         res.json().then((data) => {
           callback(data.access_token, data.expires_in);
           urn ||
             fetch(
-              `https://deign-automayion.herokuapp.com/api/forge/fileinitialize/revit_sample_file.rvt`,
+              `https://design-automation.herokuapp.com/api/forge/fileinitialize/revit_sample_file.rvt`,
               {
                 method: "GET",
                 headers: {

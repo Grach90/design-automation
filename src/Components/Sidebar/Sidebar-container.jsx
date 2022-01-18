@@ -29,7 +29,7 @@ const Sidebar = () => {
       console.log("inputState", inputState);
       formData.append("data", JSON.stringify(inputState));
       fetch(
-        "https://deign-automayion.herokuapp.com/api/forge/designautomation/workitems/revit_sample_file.rvt",
+        "https://design-automation.herokuapp.com/api/forge/designautomation/workitems/revit_sample_file.rvt",
         {
           method: "POST",
           body: formData,
@@ -52,7 +52,7 @@ const Sidebar = () => {
       return;
     }
 
-    const connection = io.connect("https://deign-automayion.herokuapp.com", {
+    const connection = io.connect("https://design-automation.herokuapp.com", {
       transports: ["websocket"],
     });
     setSocket(connection);
