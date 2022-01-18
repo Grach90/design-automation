@@ -1,0 +1,31 @@
+.sidebar {
+  position: absolute;
+  width: 340px;
+  height: 100%;
+  left: 0;
+  background-color: white;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  width: 340px;
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.content {
+  position: absolute;
+  top: 70px;
+  height: calc(100% - 70px);
+}
+
+.backIcon {
+  border-style: none;
+  position: absolute;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}

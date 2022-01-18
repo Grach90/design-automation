@@ -1,0 +1,6 @@
+.init_div {
+  position: absolute;
+  width: calc(100% - 340px);
+  height: 100%;
+  right: 0;
+}
